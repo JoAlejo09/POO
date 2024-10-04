@@ -1,12 +1,12 @@
 public class LibroCalificaciones {
     private String nombreCurso;
-    public void getNombreCurso(String nombre){
+    public void getnombreCurso(String nombre){
         nombreCurso = nombre;
     }
     public String setNombreCurso(){
         return nombreCurso;
     }
-    public void mostrarMensaje(String curso){
-        System.out.println("Bienvenidos al Libro de Calificaciones del curso: "+curso);
+    public void mostrarMensaje(){
+        System.out.println("Bienvenidos al Libro de Calificaciones del curso: "+setNombreCurso());
     }
 }

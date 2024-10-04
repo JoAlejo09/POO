@@ -8,6 +8,7 @@ public class Main { //Definicion de las clases para Java
          Scanner scanner = new Scanner(System.in);
          System.out.println("Ingrese el curso al que pertenece: ");
          String curso = scanner.nextLine();
-         mi_Libro.mostrarMensaje(curso);
+         mi_Libro.getnombreCurso(curso);
+         mi_Libro.mostrarMensaje();
     }
 }
