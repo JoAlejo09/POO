@@ -1,5 +1,5 @@
 public class LibroCalificaciones {
-    public void mostrarMensake(){
-        System.out.println("Bienvenidos al Libro de Calificaciones");
+    public void mostrarMensaje(String curso){
+        System.out.println("Bienvenidos al Libro de Calificaciones del curso: "+curso);
     }
 }
