@@ -22,8 +22,9 @@ public class Main {
         nueva_Persona.Presentarse();
 
         //EJERCICIO 2
-        Libro nuevo_Libro = new Libro();
         System.out.println("---------------EJERCICIO 2---------------");
+        Libro nuevo_Libro = new Libro();
+
         System.out.print("Ingrese el nombre del libro: ");
         String titulo = scanner.nextLine();
         System.out.print("Ingrese el nommbre del autor del libro: ");
