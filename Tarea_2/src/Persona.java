@@ -28,6 +28,8 @@ public class Persona {
     }
 
     public void Presentarse(){
-        System.out.println("Mi nombre es: "+nombre+"\nTengo "+edad+" años\nMi genero es "+genero);
+        System.out.print("\n---------------Resultado-----------------");
+        System.out.print("\nMi nombre es: "+nombre+"\nTengo "+edad+" años\nMi genero es "+genero);
+        System.out.print("\n----------------------------------------\n");
     }
 }
