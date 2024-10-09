@@ -16,7 +16,8 @@ public class Libro {
     }
 
     public void infoLibro(){
-
-
+        System.out.print("\n---------------Resultado-----------------");
+        System.out.print("\nNombre: "+titulo+", Autor: "+autor+",  Paginas: "+paginaCount);
+        System.out.print("\n----------------------------------------\n");
     }
 }
