@@ -1,7 +1,15 @@
 public class Vehiculos {
-    public static void main(String[] args) {
-        String marca,color;
-        int year, kilometraje;
-        double precio;
+    String marca,color,tipo;
+    int anio;
+    double precio;
+
+    public Vehiculos(double precio, String tipo, int anio, String color, String marca) {
+        this.precio = precio;
+        this.tipo = tipo;
+        this.anio = anio;
+        this.color = color;
+        this.marca = marca;
+        System.out.println("Marca: "+marca+"\nTipo: "+tipo+"\nAño: "+anio+"\tColor: "+color+"\tPrecio: "+precio);
     }
+
 }
