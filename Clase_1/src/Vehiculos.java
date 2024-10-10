@@ -9,6 +9,8 @@ public class Vehiculos {
         this.anio = anio;
         this.color = color;
         this.marca = marca;
+    }
+    public void imprimir(){
         System.out.println("Marca: "+marca+"\nTipo: "+tipo+"\nAño: "+anio+"\tColor: "+color+"\tPrecio: "+precio);
     }
 
