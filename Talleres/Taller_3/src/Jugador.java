@@ -11,6 +11,11 @@ public class Jugador {
         avatar ="Elpro";
         edad = 19;
         pais = "Colombia";
+    }
+    public void imprimir(){
+        System.out.println("-------Jugador-------");
+        System.out.println("Avatar: "+avatar+"\tEdad:"+edad+"\tPais:"+pais);
+        System.out.println("---------------------");
 
     }
     public void patear(){
@@ -19,7 +24,8 @@ public class Jugador {
     public void correr(){
         System.out.println("El jugador " + avatar + "\nEsta corriendo....");
     }
-    public void saltar(){
-        System.out.println("El jugador " + avatar + "\nEsta saltando....");
+    public void saltar(int veces){
+        System.out.println("El jugador " + avatar + "\nEsta saltando "+(veces+2)+" veces");
+
     }
 }
