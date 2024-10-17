@@ -3,6 +3,9 @@ public class Vehiculo {
     private String modelo, color,placa;
     private double costo;
 
+    public Vehiculo() {
+    }
+
     public Vehiculo(String color, String modelo, int anio) {
         this.color = color;
         this.modelo = modelo;
@@ -22,13 +25,19 @@ public class Vehiculo {
     }
 
     public void mostrar(){
-        if(this.color==null)
-            System.out.println("Coche:\n Modelo: "+this.modelo);
-        else if (this.costo == 0)
-            System.out.println("Coche:\n Modelo: "+this.modelo+"\n Año: "+this.anio+"\n Color: "+this.color);
-        else
-            System.out.println("Coche:\n Modelo: "+this.modelo+"\n Año: "+this.anio+"\n Color: "+this.color+"\n Costo: "+this.costo+"\n Placa: "+this.placa);
+        String cadena ="Coche";
+        if(this.modelo!=null)
+            cadena+="\n Modelo: "+this.modelo;
+        if(this.anio !=0)
+            cadena+="\n Año: "+this.anio;
+        if(this.color!=null)
+            cadena+="\n Color: "+this.color;
+        if(this.costo!=0)
+            cadena+="\n Costo: "+this.costo;
+        if(this.placa!=null)
+            cadena+="\n Placa: "+this.placa;
+        cadena+="\n--------------------";
+        System.out.println(cadena);
 
-    System.out.println("--------------------");
     }
 }
