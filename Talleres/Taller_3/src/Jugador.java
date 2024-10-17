@@ -8,14 +8,18 @@ public class Jugador {
         this.avatar = avatar;
     }
     public Jugador(){
+        avatar ="Elpro";
+        edad = 19;
+        pais = "Colombia";
+
     }
     public void patear(){
-        System.out.println("El jugador " + avatar + "Esta pateando....");
+        System.out.println("El jugador " + avatar + "\nEsta pateando....");
     }
     public void correr(){
-        System.out.println("El jugador " + avatar + "Esta corriendo....");
+        System.out.println("El jugador " + avatar + "\nEsta corriendo....");
     }
     public void saltar(){
-        System.out.println("El jugador " + avatar + "Esta saltando....");
+        System.out.println("El jugador " + avatar + "\nEsta saltando....");
     }
 }
