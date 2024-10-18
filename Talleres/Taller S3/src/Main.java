@@ -18,14 +18,19 @@ public class Main {
         per_pri.mostrarDatos();
         per_pri.esMayor();
 
-
         //Metodos de la Clase PersonaPublica
             //Uso de setter para agregar los valores en las clase PersonaPublica
         per_pub.setDireccion("Quito-Ecuador");
         per_pub.setEmail("micorrero123@hotmail.com");
         per_pub.setTelefono("23451257");
 
-        //Uso de metodo publico que contiene a los metodos privados de la clase PersonaPublica
-        per_pub.usarMetodos_privados("La Magdalena - Quito, Ecuador");
+        //USO DE GET PARA MOSTRAR TELEFONO
+        System.out.println("Telefono: "+per_pub.getTelefono());
+
+        //USO DE SET PARA CAMBIAR EL VALOR DE DIRECCION
+        String cadena = "El valor actual de Direccion es: "+ per_pub.getDireccion();
+        per_pub.setDireccion("La Magdalena - Quito, Ecuador");
+        cadena+="\nEl nuevo valor cambiado de Direccion es: "+per_pub.getDireccion();
+        System.out.println(cadena);
     }
 }

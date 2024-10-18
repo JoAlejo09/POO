@@ -12,6 +12,9 @@ public class PersonaPublica {
         this.email = email;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
@@ -34,11 +37,6 @@ public class PersonaPublica {
 
     private void mostrarTelefono(){
         System.out.println("Telefono: "+this.telefono);
-    }
-    //Metodo que permite acceder a las clases private
-    public void usarMetodos_privados(String nueva_direccion){
-        cambiarDireccion(nueva_direccion);
-        mostrarTelefono();
     }
 
 }
