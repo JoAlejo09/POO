@@ -7,14 +7,9 @@ public class Jugador {
         this.pais = pais;
         this.avatar = avatar;
     }
-    public Jugador(){
-        avatar ="Elpro";
-        edad = 19;
-        pais = "Colombia";
-    }
     public void imprimir(){
         System.out.println("-------Jugador-------");
-        System.out.println("Avatar: "+avatar+"\tEdad:"+edad+"\tPais:"+pais);
+        System.out.println("Avatar: "+avatar+"\nEdad:"+edad+"\nPais:"+pais);
         System.out.println("---------------------");
 
     }
