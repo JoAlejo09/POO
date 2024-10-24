@@ -1,4 +1,5 @@
 public class PersonaPrivada {
+    //ATRIBUTOS
     private String nombre;
     private int edad;
     private double altura;
@@ -8,6 +9,7 @@ public class PersonaPrivada {
         this.nombre="";
         this.altura=0;
     }
+    //GETTERS AND SETTERS
 
     public double getAltura() {
         return altura;
@@ -32,6 +34,8 @@ public class PersonaPrivada {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    //METODOS
 
     public void mostrarDatos(){
         System.out.println("----------INFORMACION----------");

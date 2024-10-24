@@ -1,7 +1,10 @@
+//Nombre clase
 public class Empleado {
+
     private String nombre;
     private int edad;
     private double salario;
+
     //CONSTRUCTOR
     public Empleado(String nombre, int edad, double salario){
         this.nombre = nombre;
