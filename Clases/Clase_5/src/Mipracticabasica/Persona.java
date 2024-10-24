@@ -9,11 +9,13 @@ public Persona(int edad){
 private void imprimirEdad(){
     System.out.println("La edad de la persona es: "+edad+" años");
 }
-private void verificarMayordeEdad(){
+private boolean verificarMayordeEdad(){
     if(edad>=18){
         System.out.println("La persona es mayor de edad");
+        return true;
     }else{
         System.out.println("La persona es menor de edad");
+        return false;
     }
 }
 public void mostrarResultados(){
