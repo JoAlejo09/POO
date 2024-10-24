@@ -1,7 +1,5 @@
 package Octubre24;
 
-import javax.management.openmbean.OpenMBeanAttributeInfo;
-
 public class Operaciones {
     //Atributos
     int valor1,valor2;
