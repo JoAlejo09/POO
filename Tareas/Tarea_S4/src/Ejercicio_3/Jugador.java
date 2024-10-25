@@ -30,6 +30,6 @@ public class Jugador {
         System.out.print("\nNombre: "+getNombre()+"\nAño Nacimiento: "+getAnioNacimiento()+"\nNumero de Camiseta: "+getNumeroCamiseta());
     }
     public double calcularVenta(int cantidad){
-        return cantidad*25;
+        return cantidad*25.00;
     }
 }
