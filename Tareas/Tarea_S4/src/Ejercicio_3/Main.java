@@ -25,7 +25,5 @@ public class Main {
         equipo1.obtenerJugador().setNumeroCamiseta(nuevo_nro);
         System.out.println("CAMBIO REALIZADO......");
         equipo1.mostrarJugador();
-
-
     }
 }

@@ -16,8 +16,7 @@ public class Factura {
     }
     public void mostrarFactura(){
         System.out.println("-----FACTURA-----");
-        System.out.println("Plato\t\tCantidad\tPrecio Unitario\tPrecio Total");
+        System.out.println("Plato\t\t\t\tCantidad\t\tPrecio Unitario\tPrecio Total");
         System.out.println(plato.getNombre()+"\t\t"+cantidad+"\t\t\t"+plato.getPrecio()+"\t\t\t"+calcularTotal());
     }
-
 }
