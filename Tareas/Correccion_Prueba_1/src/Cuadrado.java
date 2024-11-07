@@ -7,6 +7,7 @@ public class Cuadrado {
         return lado;
     }
     public void setLado(double lado){
+        System.out.println("El valor del lado del cuadrado se ha cambiado de "+this.lado+" a "+lado);
         this.lado = lado;
     }
     public double areaCuadrado(){

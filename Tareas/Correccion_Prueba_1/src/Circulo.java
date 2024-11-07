@@ -4,6 +4,7 @@ public class Circulo {
         this.radio = 0;
     }
     public void setRadio(double radio){
+        System.out.println("El valor del lado del cuadrado se ha cambiado de "+this.radio+" a "+radio);
         this.radio = radio;
     }
     public double getRadio(){
