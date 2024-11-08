@@ -11,9 +11,9 @@ public class Cuadrado {
         this.lado = lado;
     }
     public double areaCuadrado(){
-        return Math.pow(this.lado,2);
+        return Math.pow(this.lado,2); // Area l^2
     }
     public double perimetroCuadrado(){
-        return this.lado *4;
+        return this.lado *4; //suma de los 4 lados
     }
 }

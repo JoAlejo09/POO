@@ -11,9 +11,9 @@ public class Circulo {
         return this.radio;
     }
     public double perimetroCirculo(){
-        return Math.PI * 2 * this.radio;
+        return Math.PI * 2 * this.radio; //2* PI *RADIO
     }
     public double   areaCirculo(){
-        return Math.PI* Math.pow(this.radio,2);
+        return Math.PI* Math.pow(this.radio,2); // PI * R^2
     }
 }

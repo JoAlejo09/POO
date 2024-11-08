@@ -1,3 +1,8 @@
+/*TAREA CORRECCION DE LA PRUEBA
+    Nombre: Jose Pila
+    Fecha: 5/11/2024
+ */
+
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -40,7 +45,7 @@ public class Main {
         System.out.println("CALCULO DE PERIMETRO Y AREAS");
         System.out.println("--------CUADRADO-------\n Lado: " + cuadrado.getLado() +
                 "\n Perimetro: " + cuadrado.perimetroCuadrado() + "\n Area: " + cuadrado.areaCuadrado());
-        System.out.println("--------CIRCULO-------\n Radio: " + cuadrado.getLado() +
+        System.out.println("--------CIRCULO-------\n Radio: " + circulo.getRadio() +
                 "\n Perimetro: " + circulo.perimetroCirculo() + "\n Area: " + circulo.areaCirculo());
         System.out.println("--------RECTANGULO-------\n Base: " + rectangulo.getBase() +
                 "\n Altura: " + rectangulo.getAltura() + "\n Perimetro: " + rectangulo.perimetroRectangulo() +
