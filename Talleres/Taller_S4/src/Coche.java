@@ -3,7 +3,6 @@ public class Coche extends Vehiculo{
  public float consumo_gasolina,cilindraje;
  public String color;
 
-
     public Coche(String marca, String modelo, int anio,float cilindraje, String color) {
         super(marca, modelo, anio);
         this.consumo_gasolina=0;
