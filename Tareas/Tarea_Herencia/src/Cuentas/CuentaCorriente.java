@@ -8,7 +8,7 @@ public class CuentaCorriente extends Cliente{
     @Override
     public void mostrarInformacion() {
         super.mostrarInformacion();
-        System.out.println("Saldo:$"+getSaldo());
+        System.out.println("Saldo:$"+getSaldo()+"\n-------------------------------");
     }
     public void debitarDinero(double valor, int tasa){
         super.debitarDinero(valor,tasa);

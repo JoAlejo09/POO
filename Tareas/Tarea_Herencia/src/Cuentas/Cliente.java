@@ -21,8 +21,9 @@ public class Cliente {
         return nombre;
     }
     public void mostrarInformacion(){
-        System.out.println("------CLIENTE------\n" +
-                "Nombre: "+getNombre()+"\nId: "+getIdentificacion());
+        System.out.println("---------CLIENTE---------\n" +
+                "Nombre: "+getNombre()+"\nId: "+getIdentificacion()
+                );
     }
     public void debitarDinero(double valor,int tasa){
         if(valor>saldo){

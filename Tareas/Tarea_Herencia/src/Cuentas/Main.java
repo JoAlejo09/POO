@@ -2,7 +2,9 @@ package Cuentas;
 
 import java.util.Scanner;
 
-public class Main {
+import static java.lang.Thread.*;
+
+public class Main{
     public static void main(String []args) {
         double valor;
         int opcion;
@@ -22,6 +24,12 @@ public class Main {
                 case 1:
                     ahorro.mostrarInformacion();
                     corriente.mostrarInformacion();
+                    try {
+                        System.out.println("Volviendo al menu.........");
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
                 case 2:
                     System.out.print("---TRANSFERENCIA ENTRE CUENTAS---\n" +
@@ -52,6 +60,12 @@ public class Main {
                             System.out.println("Opcion ingresada incorrectamente");
                             break;
                     }
+                    try {
+                        System.out.println("Volviendo al menu.........");
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
                 case 3:
                     System.out.print("-----RETIRO DE DINERO-----\n" +
@@ -71,6 +85,12 @@ public class Main {
                         default:
                             System.out.println("Opcion ingresada incorrectamente");
                             break;
+                    }
+                    try {
+                        System.out.println("Volviendo al menu.........");
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
                     }
                     break;
                 case 4:
@@ -92,9 +112,21 @@ public class Main {
                             System.out.println("Opcion ingresada incorrectamente");
                             break;
                     }
+                    try {
+                        System.out.println("Volviendo al menu.........");
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
                 case 5:
                     inicio = 0;
+                    System.out.println("Finalizacion del ropGracias por usar el programa........\nFinalizando.........");
+                    try {
+                        Thread.sleep(5000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                     break;
                 default:
                     System.out.println("Opcion ingresada incorrectamente");
