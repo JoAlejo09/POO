@@ -1,11 +1,11 @@
 package Animales;
 
 public class Gato extends Animal{
-    public Gato (String nombre, int edad, String raza, double tam){
+    public Gato (){
         super();
     }
     public void hacerSonido(){
         super.hacerSonido();
-        System.out.println("El perro "+super.getNombre()+" hace miau miau....");
+        System.out.println("El gato "+super.getNombre()+" de "+super.getEdad()+" años hace miau miau....");
     }
 }
