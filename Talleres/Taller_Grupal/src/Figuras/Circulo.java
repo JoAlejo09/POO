@@ -1,6 +1,8 @@
-//Clase Circulo hereda los atributos de Figura (CalcularArea, CalcularPerimetro )y lo sobreescribe
+package Figuras;
+
+//Clase Figura.Circulo hereda los atributos de Figura.Figura (CalcularArea, CalcularPerimetro )y lo sobreescribe
 public class Circulo extends  Figura{
-    //Atributos privados que solo se usan en Circulo
+    //Atributos privados que solo se usan en Figura.Circulo
     private double radio;
     public Circulo(double r){
         super();
@@ -10,7 +12,7 @@ public class Circulo extends  Figura{
     public double getRadio() {
         return radio;
     }
-    //Metodos heredados y aplicados sobreescritura para el Circulo(Calcula el area y perimetro en funcion del radio)
+    //Metodos heredados y aplicados sobreescritura para el Figura.Circulo(Calcula el area y perimetro en funcion del radio)
     @Override
     public double calcularArea(){
         return Math.PI * Math.pow(radio,2);

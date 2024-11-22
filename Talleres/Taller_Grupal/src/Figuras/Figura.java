@@ -1,5 +1,7 @@
+package Figuras;
+
 //Clase principal sobre el cual se realizara la Herencia
-//Los metodos no poseen valor ya que cada clase heredada (Circulo, Cuadrado) posee sus propios atributos
+//Los metodos no poseen valor ya que cada clase heredada (Figura.Circulo, Figura.Cuadrado) posee sus propios atributos
 public class Figura {
 
     public Figura(){
