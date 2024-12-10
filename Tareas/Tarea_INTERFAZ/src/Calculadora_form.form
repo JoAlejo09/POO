@@ -44,20 +44,12 @@
               <text value="(-) Restar"/>
             </properties>
           </component>
-          <component id="aead6" class="javax.swing.JButton" binding="multiplicarButton" default-binding="true">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="(*)Multiplicar"/>
-            </properties>
-          </component>
           <component id="f4533" class="javax.swing.JButton" binding="dividirButton" default-binding="true">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="( / ) Dividir"/>
+              <text value="( % ) Dividir"/>
             </properties>
           </component>
           <grid id="e36ad" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -97,6 +89,14 @@
             <properties>
               <font style="1"/>
               <text value="Resultado"/>
+            </properties>
+          </component>
+          <component id="aead6" class="javax.swing.JButton" binding="multiplicarButton" default-binding="true">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="(*) Multiplicar"/>
             </properties>
           </component>
         </children>

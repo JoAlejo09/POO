@@ -19,10 +19,13 @@ public class Calculadora_form {
                 Double valor1 = 0.0, valor2 = 0.0;
                 if(tNum1.getText().isEmpty()&&tNum2.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null,"Ingrese todos los campos","Error",JOptionPane.WARNING_MESSAGE);
+                    tResultado.setText("");
                 }else if (tNum1.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null,"Ingrese todos los campos","Error",JOptionPane.WARNING_MESSAGE);
+                    tResultado.setText("");
                 }else if (tNum2.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null,"Ingrese todos los campos","Error",JOptionPane.WARNING_MESSAGE);
+                    tResultado.setText("");
                 } else {
                     valor1 = Double.parseDouble(tNum1.getText());
                     valor2 = Double.parseDouble(tNum2.getText());
