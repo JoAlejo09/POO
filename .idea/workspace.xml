@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbe83273-022b-4161-8aa1-a624074d461d" name="Changes" comment="Updates">
-      <change afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Vehiculos/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Vehiculos/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Figuras/Circulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Cuadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Figuras/Cuadrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Figura.java" beforeDir="false" afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Figuras/Figura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Talleres/Taller_Grupal/src/Figuras/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examen_Bimestral/Examen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Examen_Bimestral/Examen/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +22,12 @@
     &quot;assignee&quot;: &quot;JoAlejo09&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JoAlejo09/POO.git&quot;,
-    &quot;accountId&quot;: &quot;cd9930be-1de2-41f3-b082-c1448a98ce13&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JoAlejo09/POO.git",
+    "accountId": "7ffd1bad-694d-4363-a028-c15fab4b787e"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,7 +44,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josea/Desktop/Materias Clases/Materias 2024-B/2do Semestre/Repositorio/Talleres/Taller_Grupal",
+    "last_opened_file_path": "C:/Users/POO/Desktop/PILA_JOSE_POO/Tareas/Tarea_INTERFAZ",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
