@@ -17,6 +17,15 @@ public class Login_form {
                 boolean valor = validar();
                 if(valor){
                     JOptionPane.showMessageDialog(null,"Usuario registrado correctamente","Registro Correcto",JOptionPane.PLAIN_MESSAGE);
+                    JFrame frame = new JFrame("Menu Principal");
+                    frame.setContentPane(new Menu().jMenu);
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setSize(40,60);
+                    frame.setPreferredSize(new Dimension(320,240));
+                    frame.pack();
+                    frame.setVisible(true);
+                    JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jPanel);
+                    loginFrame.dispose();
                 }else{
                     JOptionPane.showMessageDialog(null,"Login incorrecto. Ingreselo nuevamente...","Error",JOptionPane.ERROR_MESSAGE);
                     tUsuario.setText("");
