@@ -8,17 +8,17 @@ public class Saldo {
     private JButton menuButton;
     public JPanel jSaldo;
     JFrame frame = new JFrame();
-    public Saldo() {
-        Cuenta cuenta = new Cuenta();
+    public Saldo(Double valor) {
+        Cuenta cuenta = new Cuenta(valor);
         jlSaldo.setText("Su saldo actual es: $"+cuenta.getDinero());
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frame.setTitle("MENU");
-                frame.setContentPane(new Menu().jMenu);
+                frame.setContentPane(new Menu(cuenta.getDinero()).jMenu);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.setSize(40,60);
-                frame.setPreferredSize(new Dimension(320,240));
+                frame.setPreferredSize(new Dimension(320,290));
                 frame.pack();
                 frame.setVisible(true);
                 JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jSaldo);

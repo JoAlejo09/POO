@@ -9,17 +9,17 @@ public class Retiro {
     private JButton menuButton;
     public JPanel jRetiro;
     JFrame frame = new JFrame();
-    Cuenta cuenta = new Cuenta();
 
-    public Retiro() {
+    public Retiro(Double valor) {
+        Cuenta cuenta = new Cuenta(valor);
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frame.setTitle("MENU");
-                frame.setContentPane(new Menu().jMenu);
+                frame.setContentPane(new Menu(cuenta.getDinero()).jMenu);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.setSize(40,60);
-                frame.setPreferredSize(new Dimension(320,240));
+                frame.setPreferredSize(new Dimension(320,290));
                 frame.pack();
                 frame.setVisible(true);
                 JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jRetiro);
@@ -35,8 +35,8 @@ public class Retiro {
                     JOptionPane.showMessageDialog(null,"No puede ser 0.\nIngrese el valor a retirar...","Error",JOptionPane.WARNING_MESSAGE);
                     tValor.setText("");
                 }else{
-                    Double valor = Double.parseDouble(tValor.getText());
-                    boolean opcion = cuenta.retirarDinero(valor);
+                    Double retiro = Double.parseDouble(tValor.getText());
+                    boolean opcion = cuenta.retirarDinero(retiro);
                     if(opcion){
                         JOptionPane.showMessageDialog(null,"Se ha realizado la transaccion.\nSu saldo actual es: $"+cuenta.getDinero(),"Transaccion Realizada",JOptionPane.INFORMATION_MESSAGE);
                     }else{

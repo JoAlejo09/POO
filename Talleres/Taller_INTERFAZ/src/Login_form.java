@@ -18,10 +18,10 @@ public class Login_form {
                 if(valor){
                     JOptionPane.showMessageDialog(null,"Usuario registrado correctamente","Registro Correcto",JOptionPane.PLAIN_MESSAGE);
                     JFrame frame = new JFrame("Menu Principal");
-                    frame.setContentPane(new Menu().jMenu);
+                    frame.setContentPane(new Menu((double) 100).jMenu);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setSize(40,60);
-                    frame.setPreferredSize(new Dimension(320,240));
+                    frame.setPreferredSize(new Dimension(320,290));
                     frame.pack();
                     frame.setVisible(true);
                     JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jPanel);

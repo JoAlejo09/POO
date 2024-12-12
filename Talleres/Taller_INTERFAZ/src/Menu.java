@@ -12,7 +12,7 @@ public class Menu {
     public JPanel jMenu;
     private JPanel jList;
     ButtonGroup grupo = new ButtonGroup();
-    public Menu(){
+    public Menu(Double valor){
         grupo.add(verSaldoRadioButton);
         grupo.add(retiroRadioButton);
         grupo.add(depositoRadioButton);
@@ -23,15 +23,18 @@ public class Menu {
                 JFrame frame = new JFrame();
                 if (verSaldoRadioButton.isSelected()){
                     frame.setTitle("SALDO CLIENTE");
-                    frame.setContentPane(new Saldo().jSaldo);
+                    frame.setContentPane(new Saldo(valor).jSaldo);
+                    frame.setPreferredSize(new Dimension(370,240));
                 }else if(retiroRadioButton.isSelected()) {
                     frame.setTitle("RETIRO DINERO");
-                    frame.setContentPane(new Retiro().jRetiro);
+                    frame.setContentPane(new Retiro(valor).jRetiro);
+                    frame.setPreferredSize(new Dimension(320,240));
                 }else if(depositoRadioButton.isSelected()){
                     frame.setTitle("DEPOSITO DINERO");
-                    frame.setContentPane(new Deposito().jDepositar);
+                    frame.setContentPane(new Deposito(valor).jDepositar);
+                    frame.setPreferredSize(new Dimension(320,240));
                 }else if(salirRadioButton.isSelected()){
-                    JOptionPane.showMessageDialog(null,"GRACIAS POR USAR LA APLICACION","ERROR",JOptionPane.PLAIN_MESSAGE);
+                    JOptionPane.showMessageDialog(null,"GRACIAS POR USAR LA APLICACION","SALIENDO....",JOptionPane.PLAIN_MESSAGE);
                     System.exit(0);
                 }
                 else{
@@ -40,7 +43,6 @@ public class Menu {
                 }
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(40,60);
-                frame.setPreferredSize(new Dimension(320,240));
                 frame.pack();
                 frame.setVisible(true);
                 JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jMenu);

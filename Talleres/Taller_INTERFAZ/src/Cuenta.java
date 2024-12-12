@@ -1,7 +1,7 @@
 public class Cuenta {
     private Double dinero;
-    public Cuenta(){
-        dinero = dinero;
+    public Cuenta(Double dinero){
+        this.dinero = dinero;
     }
     public Double getDinero() {
         return dinero;
