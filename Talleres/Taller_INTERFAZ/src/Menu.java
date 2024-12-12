@@ -28,21 +28,22 @@ public class Menu {
                 }else if(retiroRadioButton.isSelected()) {
                     frame.setTitle("RETIRO DINERO");
                     frame.setContentPane(new Retiro(valor).jRetiro);
-                    frame.setPreferredSize(new Dimension(320,240));
+                    frame.setPreferredSize(new Dimension(320,310));
                 }else if(depositoRadioButton.isSelected()){
                     frame.setTitle("DEPOSITO DINERO");
                     frame.setContentPane(new Deposito(valor).jDepositar);
-                    frame.setPreferredSize(new Dimension(320,240));
+                    frame.setPreferredSize(new Dimension(320,310));
                 }else if(salirRadioButton.isSelected()){
                     JOptionPane.showMessageDialog(null,"GRACIAS POR USAR LA APLICACION","SALIENDO....",JOptionPane.PLAIN_MESSAGE);
                     System.exit(0);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null,"SELECCIONE VER SALDO");
+                    JOptionPane.showMessageDialog(null,"SELECCIONE UNA OPCION.","ALERTA",JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(40,60);
+                frame.setLocationRelativeTo(null);
                 frame.pack();
                 frame.setVisible(true);
                 JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jMenu);
