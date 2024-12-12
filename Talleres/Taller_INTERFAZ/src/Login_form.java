@@ -22,6 +22,7 @@ public class Login_form {
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setSize(40,60);
                     frame.setPreferredSize(new Dimension(320,290));
+                    frame.setLocationRelativeTo(null);
                     frame.pack();
                     frame.setVisible(true);
                     JFrame loginFrame = (JFrame) SwingUtilities.getWindowAncestor(jPanel);

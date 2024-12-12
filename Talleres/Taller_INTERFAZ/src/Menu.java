@@ -38,7 +38,7 @@ public class Menu {
                     System.exit(0);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null,"SELECCIONE VER SALDO");
+                    JOptionPane.showMessageDialog(null,"SELECCIONE UNA OPCION.","ALERTA",JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

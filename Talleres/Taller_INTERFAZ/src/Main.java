@@ -8,6 +8,7 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(40,60);
         frame.setPreferredSize(new Dimension(320,240));
+        frame.setLocationRelativeTo(null);
         frame.pack();
         frame.setVisible(true);
 
