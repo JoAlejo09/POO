@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        JFrame frame = new JFrame("MENU");
+        frame.setContentPane();
+        /*Scanner scan = new Scanner(System.in);
         Principal registro = new Principal();
         int valor, cont=1;
         do {
@@ -30,5 +32,5 @@ public class Main {
             System.out.println("Desea continuar. 1.Si/2.No. Seleccione: ");
             cont = scan.nextInt();
         }while(cont==1);
-    }
+    */}
 }
