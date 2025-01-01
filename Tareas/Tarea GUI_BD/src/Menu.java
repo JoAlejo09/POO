@@ -15,17 +15,16 @@ public class Menu {
     public Menu(JFrame frame_act, JFrame frame_ant,String usuario){
         frame_ant.dispose();
         lBien.setText("Bienvenido Usuario: "+usuario);
-
-        salirButton.addActionListener(new ActionListener() {
+        buscarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Saliendo","",JOptionPane.PLAIN_MESSAGE);
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException ex) {
-                    throw new RuntimeException(ex);
-                }
-                System.exit(0);
+                JFrame frame = new JFrame();
+                Metodos met  = new Metodos(frame);
+                JPanel panel = new Busqueda(frame,frame_act,usuario).jPanel;
+                met.crearVentana("BUSQUEDA",panel);
+                met.generarDimensiones(600,400);
+                met.iniciarVentana();
+
             }
         });
         cerrarSesiónButton.addActionListener(new ActionListener() {
@@ -37,6 +36,18 @@ public class Menu {
                 met.crearVentana("LOGIN/REGISTRO",panel);
                 met.generarDimensiones(300,200);
                 met.iniciarVentana();
+            }
+        });
+        salirButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null,"Saliendo","",JOptionPane.PLAIN_MESSAGE);
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
+                System.exit(0);
             }
         });
     }
