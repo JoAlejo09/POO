@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class Login {
     private JTextField tUsuario;
@@ -8,29 +9,33 @@ public class Login {
     private JButton ingresarButton;
     public JPanel jPanel;
     Metodos met;
+    BaseMet bas;
     public Login(JFrame frameActual) {
         JFrame frame = new JFrame();
         met = new Metodos(frame);
+
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int i = met.validarUSuario(tUsuario.getText());
-                int j = met.validadContra(pContraseña.getText());
                 if (tUsuario.getText().isEmpty() | pContraseña.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "No puede haber espacios en blanco....", "ERROR", JOptionPane.WARNING_MESSAGE);
+                }else{
+                    String sql ="SELECT COUNT(*) AS total FROM usuarios WHERE usuario =\'"+tUsuario.getText()+"\'and contrasena=\'"+pContraseña.getText()+"\'";
+                    try {
+                        bas = new BaseMet();
+                        int valor = bas.validarLogin(sql);
+                        if (valor >= 1) {
+                            JPanel panel = new Menu(frame, frameActual, tUsuario.getText()).jPanel;
+                            met.crearVentana("MENU INICIO", panel);
+                            met.generarDimensiones(300, 300);
+                            met.iniciarVentana();
+                        }else{
+                            JOptionPane.showMessageDialog(null,"Registro Incorrecto","ERROR",JOptionPane.ERROR_MESSAGE);
+                    }} catch (SQLException ex) {
+                        throw new RuntimeException(ex);
+                    }
                 }
-                else {
-                    if(i==0 && j==0){
-                        JPanel panel = new Menu(frame,frameActual,tUsuario.getText()).jPanel;
-                        met.crearVentana("MENU INICIO",panel);
-                        met.generarDimensiones(300,300);
-                        met.iniciarVentana();
-
                 }
-                    else{
-                    JOptionPane.showMessageDialog(null,"Registro Incorrecto","ERROR",JOptionPane.ERROR_MESSAGE);
-                }}
-            }
         });
     }
     public Login(JFrame frameActual, JFrame frameAnt){
@@ -40,22 +45,24 @@ public class Login {
         ingresarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int i = met.validarUSuario(tUsuario.getText());
-                int j = met.validadContra(pContraseña.getText());
                 if (tUsuario.getText().isEmpty() | pContraseña.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(null, "No puede haber espacios en blanco....", "ERROR", JOptionPane.WARNING_MESSAGE);
-                }
-                else {
-                    if(i==0 && j==0){
-                       JPanel panel = new Menu(frame,frameActual,tUsuario.getText()).jPanel;
-                        met.crearVentana("MENU INICIO",panel);
-                        met.generarDimensiones(300,300);
-                        met.iniciarVentana();
-
+                }else{
+                    String sql ="SELECT COUNT(*) AS total FROM usuarios WHERE usuario =\'"+tUsuario.getText()+"\'and contrasena=\'"+pContraseña.getText()+"\'";
+                    try {
+                        bas = new BaseMet();
+                        int valor = bas.validarLogin(sql);
+                        if (valor >= 1) {
+                            JPanel panel = new Menu(frame, frameActual, tUsuario.getText()).jPanel;
+                            met.crearVentana("MENU INICIO", panel);
+                            met.generarDimensiones(300, 300);
+                            met.iniciarVentana();
+                        }else{
+                            JOptionPane.showMessageDialog(null,"Registro Incorrecto","ERROR",JOptionPane.ERROR_MESSAGE);
+                        }} catch (SQLException ex) {
+                        throw new RuntimeException(ex);
                     }
-                    else{
-                        JOptionPane.showMessageDialog(null,"Registro Incorrecto","ERROR",JOptionPane.ERROR_MESSAGE);
-                    }}
+                }
             }
         });
     }

@@ -8,11 +8,10 @@ public class Busqueda {
     private JButton buscarButton;
     private JButton menuButton;
     public JPanel jPanel;
-    Metodos met;
     public Busqueda(JFrame frame_act, JFrame frame_ant,String usuario){
         frame_ant.dispose();
         JFrame frame = new JFrame();
-        met = new Metodos(frame);
+        Metodos met = new Metodos(frame);
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -20,7 +19,6 @@ public class Busqueda {
                 met.crearVentana("MENU INICIO",panel);
                 met.generarDimensiones(300,300);
                 met.iniciarVentana();
-
             }
         });
     }
