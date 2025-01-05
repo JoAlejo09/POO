@@ -34,7 +34,12 @@ public class Menu {
         agregarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JPanel panel = new AgreJugadores(frame,frame_act,usuario).jPanel;
+                JPanel panel = null;
+                try {
+                    panel = new AgreJugadores(frame,frame_act,usuario).jPanel;
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
                 met.crearVentana("AGREGAR NUEVO JUGADOR",panel);
                 met.generarDimensiones(600,400);
                 met.iniciarVentana();

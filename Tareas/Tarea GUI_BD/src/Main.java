@@ -13,6 +13,7 @@ public class Main {
         met.generarDimensiones(300,200);
         met.iniciarVentana();
 
+
         /*BaseMet base = new BaseMet();
         ResultSet resultado = null;
         try {
