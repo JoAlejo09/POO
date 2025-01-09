@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe83273-022b-4161-8aa1-a624074d461d" name="Changes" comment="Updates" />
+    <list default="true" id="cbe83273-022b-4161-8aa1-a624074d461d" name="Changes" comment="Updates">
+      <change afterPath="$PROJECT_DIR$/Talleres/Taller_MENU_CLIENTE/src/Metodos.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +24,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/JoAlejo09/POO.git",
-    "accountId": "cd9930be-1de2-41f3-b082-c1448a98ce13"
+    "accountId": "7ffd1bad-694d-4363-a028-c15fab4b787e"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -42,7 +44,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josea/Desktop/Materias Clases/Materias 2024-B/2do Semestre/Repositorio/Talleres/Taller_INTERFAZ",
+    "last_opened_file_path": "C:/Users/POO/Documents/REPOSITORIO_POO_PILA",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
