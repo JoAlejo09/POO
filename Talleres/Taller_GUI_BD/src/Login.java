@@ -26,7 +26,19 @@ public class Login {
                         throw new RuntimeException(ex);
                     }
                     if(res){
-                        JOptionPane.showMessageDialog(null,"USUARIO REGISTRADO","",1);
+                        JFrame frame = new JFrame();
+                        frame.setTitle("Principal");
+                        try {
+                            frame.setContentPane(new Principal().jPanelP);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                        frame.setLocationRelativeTo(null);
+                        frame.setSize(80,120);
+                        frame.setPreferredSize(new Dimension(600,500));
+                        frame.pack();
+                        frame.setVisible(true);
                     }else{
                         JOptionPane.showMessageDialog(null,"ERROR USUARIO O CONTRASEÑA INCORRECTO","",0);
                     }
