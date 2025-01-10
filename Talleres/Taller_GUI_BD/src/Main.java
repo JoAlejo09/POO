@@ -15,8 +15,6 @@ public class Main {
         frame.setSize(80,120);
         frame.setPreferredSize(new Dimension(300,200));
         frame.pack();
-        //frame.setResizable(false);
-
         frame.setVisible(true);
 
     }

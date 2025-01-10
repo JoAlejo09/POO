@@ -4,7 +4,7 @@ import java.sql.*;
 public class MetodosBase {
     public static String url= "jdbc:mysql://localhost:3306/concursos";
     public static String usuario = "root";
-    public static String password = "1234";
+    public static String password = "root";
     Connection conn;
     Statement stm;
     public void conectarBase(){
