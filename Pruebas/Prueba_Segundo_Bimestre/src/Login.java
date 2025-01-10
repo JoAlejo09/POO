@@ -25,10 +25,11 @@ public class Login {
                         frame.setTitle("REGISTRO DE CALIFICACIONES");
                         frame.setContentPane(new GestorCalificaciones().jPanelG);
                         frame.setSize(100,80);
-                        frame.setPreferredSize(new Dimension(700,500));
+                        frame.setPreferredSize(new Dimension(950,350));
                         frame.setLocationRelativeTo(null);
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         frame.pack();
+                        frame.setResizable(false);
                         frame.setVisible(true);
                     }
                 } catch (SQLException ex) {
